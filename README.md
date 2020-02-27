@@ -2,10 +2,9 @@
 //код библиотеки
 // с c# работаю мало и после университета многое не помню, так что писал задачу с помощью гугла
 
-using System;
-
-namespace ClassLibrary1
-{
+ 	using System;
+	namespace ClassLibrary1
+	{
     public static class Class1
     {
         public static double circle1(double r)
@@ -37,19 +36,19 @@ namespace ClassLibrary1
             return (b - c) / 2;
         }
     }
-}
+	}
 
 
-//код тестов
-using NUnit.Framework;
-using System;
-using ClassLibrary1;
-namespace ClassLibrary1test
-{
+	//код тестов
+	using NUnit.Framework;
+	using System;
+	using ClassLibrary1;
+	namespace ClassLibrary1test
+	{
     public class Tests
     {
 
-        [Test]//Круг
+        [Test] //Круг
         public void Test1()
         {
 
@@ -104,8 +103,8 @@ namespace ClassLibrary1test
             Assert.AreEqual((a * a), b * b + c * c);
         }
     }
-}
-
+	}
+	
 --код sql запроса
 --запрос пишу без проверки, уже поздно а завтра на работу, как я понял есть таблицы статей, тегов и таблица связей
 Select
