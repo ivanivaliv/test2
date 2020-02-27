@@ -107,15 +107,16 @@
 	
 --код sql запроса
 --запрос пишу без проверки, уже поздно а завтра на работу, как я понял есть таблицы статей, тегов и таблица связей
-Select
-  art.[title]
-  ,teg.[name]
- from
-  [bd].[dbo].[dic_articles] as art
-  left join [bd].[dbo].[ass_articles_and_tegs] as aat
-    on aat.[id_article] = art.[id_article]
-  left join [bd].[dbo].[dic_tegs] as teg
-    on teg.[id_teg] = aat.[id_teg]
+
+	Select
+  		art.[title]
+  		,teg.[name]
+ 	from
+  		[bd].[dbo].[dic_articles] as art
+  		left join [bd].[dbo].[ass_articles_and_tegs] as aat
+		    on aat.[id_article] = art.[id_article]
+  		left join [bd].[dbo].[dic_tegs] as teg
+    			on teg.[id_teg] = aat.[id_teg]
 
 -- из последних рабочих кодов, могу что то прислать в личной переписке, в общей доступ выкладывать не могу.
  
